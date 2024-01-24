@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Страница с Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <img src="images/Logo.png" alt="Логотип" width="80" height="80" />
+          <p class="text-uppercase">Карась entertainment</p>
+          <button
+            type="button"
+            aria-expanded="false"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </header>
+
+      <main class="main">
+        <div class="border-right border-light">
+          <menu class="p-4">
+            <nav class="nav flex-column">
+              <div
+                role="tablist"
+                id="v-pills-tab"
+                aria-orientation="vertical"
+                class="nav flex-column nav-pills"
+              >
+                <a
+                  role="tab"
+                  id="showHome"
+                  data-toggle="pill"
+                  aria-selected="true"
+                  href="#v-pills-home"
+                  class="nav-link active"
+                  aria-controls="v-pills-home"
+                >Главная</a>
+                <a
+                  role="tab"
+                  id="showForm"
+                  class="nav-link"
+                  data-toggle="pill"
+                  aria-selected="false"
+                  href="#v-pills-profile"
+                  aria-controls="v-pills-profile"
+                >Форма отчета о работе</a>
+                <a
+                  role="tab"
+                  id="showList"
+                  class="nav-link"
+                  data-toggle="pill"
+                  aria-selected="false"
+                  href="#v-pills-messages"
+                  aria-controls="v-pills-messages"
+                >Список рыб</a>
+              </div>
+            </nav>
+          </menu>
+        </div>
+        <div class="container">
+          <iframe
+            src="components/home.html"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            id="contentFrame"
+          ></iframe>
+        </div>
+      </main>
+
+      <footer class="footer bg-light">
+        <div class="container">
+          <p class="footer-text">&copy; 2023 Карась entertainment. Все права защищены.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
