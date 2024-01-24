@@ -4,13 +4,13 @@ const showHomeButton = document.getElementById('showHome');
 const contentFrame = document.getElementById('contentFrame');
 
 showListButton.addEventListener('click', () => {
-  contentFrame.src = 'components/list.html';
+  contentFrame.src = './src/components/list.html';
 });
 
 showFormButton.addEventListener('click', () => {
-  contentFrame.src = 'components/form.html';
+  contentFrame.src = './src/components/form.html';
 });
 
 showHomeButton.addEventListener('click', () => {
-  contentFrame.src = 'components/home.html';
+  contentFrame.src = './src/components/home.html';
 });
